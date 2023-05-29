@@ -8,5 +8,5 @@
 import Foundation
 
 struct TotalDataModel: Codable {
-  let updated, cases, deaths, recovered, active, affectedCountries: Double
+  let updated, cases, deaths, recovered, active, affectedCountries: Int
 }

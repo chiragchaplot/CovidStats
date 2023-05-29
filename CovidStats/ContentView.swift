@@ -17,8 +17,13 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-          APIService.sharedInstance.fetchAllCountryData { result in
-            //DO Something
+          APIService.sharedInstance.fetchGlobalData { result in
+            switch result {
+            case .success(let totalData):
+              print(totalData.cases)
+            case .failure(let error):
+              print(error.localizedDescription)
+            }
           }
         }
     }

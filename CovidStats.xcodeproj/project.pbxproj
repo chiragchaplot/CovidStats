@@ -17,6 +17,7 @@
 		050993672A24751F00FF2747 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993662A24751F00FF2747 /* APIService.swift */; };
 		050993692A2484A200FF2747 /* TotalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993682A2484A200FF2747 /* TotalDataModel.swift */; };
 		0509936B2A2485FD00FF2747 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509936A2A2485FD00FF2747 /* CustomError.swift */; };
+		0509936D2A24A38400FF2747 /* CountryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509936C2A24A38400FF2747 /* CountryDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		050993662A24751F00FF2747 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		050993682A2484A200FF2747 /* TotalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataModel.swift; sourceTree = "<group>"; };
 		0509936A2A2485FD00FF2747 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		0509936C2A24A38400FF2747 /* CountryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				050993662A24751F00FF2747 /* APIService.swift */,
 				050993682A2484A200FF2747 /* TotalDataModel.swift */,
 				0509936A2A2485FD00FF2747 /* CustomError.swift */,
+				0509936C2A24A38400FF2747 /* CountryDataModel.swift */,
 			);
 			path = CovidStats;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				0509933F2A24750500FF2747 /* ContentView.swift in Sources */,
 				050993672A24751F00FF2747 /* APIService.swift in Sources */,
 				050993692A2484A200FF2747 /* TotalDataModel.swift in Sources */,
+				0509936D2A24A38400FF2747 /* CountryDataModel.swift in Sources */,
 				0509933D2A24750500FF2747 /* CovidStatsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
