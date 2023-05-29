@@ -21,7 +21,7 @@ final class APIService {
     }
     var request = URLRequest(url: url,
                              cachePolicy: .useProtocolCachePolicy,
-                             timeoutInterval: 10.0)
+                             timeoutInterval: Double.infinity)
     request.httpMethod = "GET"
 
     let task = URLSession.shared.dataTask(with: request) { data, response, error in
@@ -55,7 +55,7 @@ final class APIService {
     }
     var request = URLRequest(url: url,
                              cachePolicy: .useProtocolCachePolicy,
-                             timeoutInterval: 10.0)
+                             timeoutInterval: Double.infinity)
     request.httpMethod = "GET"
 
     let task = URLSession.shared.dataTask(with: request) { data, response, error in

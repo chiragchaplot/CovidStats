@@ -10,7 +10,7 @@ import Foundation
 // MARK: - CountryData
 struct CountryDataModel: Codable {
     let updated: Int?
-    let country: String?
+    let country: String
     let countryInfo: CountryInfo?
     let cases, todayCases, deaths, todayDeaths: Int?
     let recovered, active, critical, casesPerOneMillion: Int?
