@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MainView: View {
 
-  @ObservedObject private var viewModel = MainViewModel()
+  @StateObject private var viewModel = MainViewModel()
+  
   var body: some View {
     NavigationView {
       ZStack(alignment: .top) {
@@ -43,7 +44,7 @@ struct MainView: View {
               },
                       id: \.countryInfo?.iso2) {
                 country in
-                NavigationLink(destination: Text("hello")) {
+                NavigationLink(destination: CountryDetailView(viewModel: CountryDetailViewModel(country: country))) {
                   Text(country.country)
                 }
               }
