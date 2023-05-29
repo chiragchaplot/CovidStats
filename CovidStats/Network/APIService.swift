@@ -20,7 +20,7 @@ final class APIService {
       return
     }
     var request = URLRequest(url: url,
-                             cachePolicy: .useProtocolCachePolicy,
+                             cachePolicy: .reloadRevalidatingCacheData,
                              timeoutInterval: Double.infinity)
     request.httpMethod = "GET"
 
@@ -54,7 +54,7 @@ final class APIService {
       return
     }
     var request = URLRequest(url: url,
-                             cachePolicy: .useProtocolCachePolicy,
+                             cachePolicy: .reloadRevalidatingCacheData,
                              timeoutInterval: Double.infinity)
     request.httpMethod = "GET"
 

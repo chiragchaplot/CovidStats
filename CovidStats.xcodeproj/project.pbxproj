@@ -23,6 +23,7 @@
 		050993762A24BED900FF2747 /* GlobalDataCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993752A24BED900FF2747 /* GlobalDataCardView.swift */; };
 		050993782A24C37C00FF2747 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993772A24C37C00FF2747 /* Int+Extensions.swift */; };
 		0509937A2A24CA8F00FF2747 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993792A24CA8F00FF2747 /* String+Extensions.swift */; };
+		0509937E2A24CC3A00FF2747 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509937D2A24CC3A00FF2747 /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		050993752A24BED900FF2747 /* GlobalDataCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataCardView.swift; sourceTree = "<group>"; };
 		050993772A24C37C00FF2747 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		050993792A24CA8F00FF2747 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0509937D2A24CC3A00FF2747 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,16 +115,13 @@
 			isa = PBXGroup;
 			children = (
 				0509933C2A24750500FF2747 /* CovidStatsApp.swift */,
-				0509933E2A24750500FF2747 /* MainView.swift */,
-				050993792A24CA8F00FF2747 /* String+Extensions.swift */,
 				050993402A24750700FF2747 /* Assets.xcassets */,
 				050993422A24750700FF2747 /* Preview Content */,
 				0509936F2A24A93700FF2747 /* Network */,
 				0509936E2A24A92E00FF2747 /* Model */,
-				050993712A24A98800FF2747 /* MainViewModel.swift */,
-				050993732A24BEC200FF2747 /* GlobalDataView.swift */,
-				050993752A24BED900FF2747 /* GlobalDataCardView.swift */,
-				050993772A24C37C00FF2747 /* Int+Extensions.swift */,
+				0509937F2A24CF0C00FF2747 /* MainView */,
+				0509937C2A24CC1500FF2747 /* View */,
+				0509937B2A24CBFB00FF2747 /* Extensions */,
 			);
 			path = CovidStats;
 			sourceTree = "<group>";
@@ -176,6 +175,34 @@
 				0509936A2A2485FD00FF2747 /* CustomError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		0509937B2A24CBFB00FF2747 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				050993792A24CA8F00FF2747 /* String+Extensions.swift */,
+				050993772A24C37C00FF2747 /* Int+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0509937C2A24CC1500FF2747 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				050993732A24BEC200FF2747 /* GlobalDataView.swift */,
+				050993752A24BED900FF2747 /* GlobalDataCardView.swift */,
+				0509937D2A24CC3A00FF2747 /* SearchBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0509937F2A24CF0C00FF2747 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				050993712A24A98800FF2747 /* MainViewModel.swift */,
+				0509933E2A24750500FF2747 /* MainView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +339,7 @@
 				0509937A2A24CA8F00FF2747 /* String+Extensions.swift in Sources */,
 				0509936B2A2485FD00FF2747 /* CustomError.swift in Sources */,
 				0509933F2A24750500FF2747 /* MainView.swift in Sources */,
+				0509937E2A24CC3A00FF2747 /* SearchBarView.swift in Sources */,
 				050993672A24751F00FF2747 /* APIService.swift in Sources */,
 				050993692A2484A200FF2747 /* TotalDataModel.swift in Sources */,
 				050993742A24BEC200FF2747 /* GlobalDataView.swift in Sources */,
