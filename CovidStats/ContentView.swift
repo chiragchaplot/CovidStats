@@ -16,6 +16,11 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+          APIService.sharedInstance.fetchAllCountryData { result in
+            //DO Something
+          }
+        }
     }
 }
 

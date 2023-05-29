@@ -14,6 +14,9 @@
 		0509934E2A24750700FF2747 /* CovidStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509934D2A24750700FF2747 /* CovidStatsTests.swift */; };
 		050993582A24750700FF2747 /* CovidStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993572A24750700FF2747 /* CovidStatsUITests.swift */; };
 		0509935A2A24750700FF2747 /* CovidStatsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993592A24750700FF2747 /* CovidStatsUITestsLaunchTests.swift */; };
+		050993672A24751F00FF2747 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993662A24751F00FF2747 /* APIService.swift */; };
+		050993692A2484A200FF2747 /* TotalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993682A2484A200FF2747 /* TotalDataModel.swift */; };
+		0509936B2A2485FD00FF2747 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509936A2A2485FD00FF2747 /* CustomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		050993532A24750700FF2747 /* CovidStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050993572A24750700FF2747 /* CovidStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatsUITests.swift; sourceTree = "<group>"; };
 		050993592A24750700FF2747 /* CovidStatsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		050993662A24751F00FF2747 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		050993682A2484A200FF2747 /* TotalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataModel.swift; sourceTree = "<group>"; };
+		0509936A2A2485FD00FF2747 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				0509933E2A24750500FF2747 /* ContentView.swift */,
 				050993402A24750700FF2747 /* Assets.xcassets */,
 				050993422A24750700FF2747 /* Preview Content */,
+				050993662A24751F00FF2747 /* APIService.swift */,
+				050993682A2484A200FF2747 /* TotalDataModel.swift */,
+				0509936A2A2485FD00FF2747 /* CustomError.swift */,
 			);
 			path = CovidStats;
 			sourceTree = "<group>";
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0509936B2A2485FD00FF2747 /* CustomError.swift in Sources */,
 				0509933F2A24750500FF2747 /* ContentView.swift in Sources */,
+				050993672A24751F00FF2747 /* APIService.swift in Sources */,
+				050993692A2484A200FF2747 /* TotalDataModel.swift in Sources */,
 				0509933D2A24750500FF2747 /* CovidStatsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
