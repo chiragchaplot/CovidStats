@@ -26,6 +26,7 @@
 		0509937E2A24CC3A00FF2747 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509937D2A24CC3A00FF2747 /* SearchBarView.swift */; };
 		050993812A24CFA200FF2747 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993802A24CFA200FF2747 /* CountryDetailView.swift */; };
 		050993832A24CFAE00FF2747 /* CountryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993822A24CFAE00FF2747 /* CountryDetailViewModel.swift */; };
+		05E3EDFB2A25852200FE4283 /* CountryDetailsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3EDFA2A25852200FE4283 /* CountryDetailsViewModelSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		0509937D2A24CC3A00FF2747 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		050993802A24CFA200FF2747 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		050993822A24CFAE00FF2747 /* CountryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewModel.swift; sourceTree = "<group>"; };
+		05E3EDFA2A25852200FE4283 /* CountryDetailsViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModelSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,15 +120,10 @@
 		0509933B2A24750500FF2747 /* CovidStats */ = {
 			isa = PBXGroup;
 			children = (
-				0509933C2A24750500FF2747 /* CovidStatsApp.swift */,
-				050993402A24750700FF2747 /* Assets.xcassets */,
-				050993422A24750700FF2747 /* Preview Content */,
-				0509936F2A24A93700FF2747 /* Network */,
-				0509936E2A24A92E00FF2747 /* Model */,
-				0509937F2A24CF0C00FF2747 /* MainView */,
-				0509937C2A24CC1500FF2747 /* ReusableViews */,
-				0509937B2A24CBFB00FF2747 /* Extensions */,
-				050993842A24CFBB00FF2747 /* CountryDetailView */,
+				0509938B2A24E4FF00FF2747 /* Resources */,
+				050993892A24E4CA00FF2747 /* DataLayer */,
+				0509938A2A24E4DE00FF2747 /* DomainLayer */,
+				050993872A24E4A800FF2747 /* PresentationLayer */,
 			);
 			path = CovidStats;
 			sourceTree = "<group>";
@@ -143,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				0509934D2A24750700FF2747 /* CovidStatsTests.swift */,
+				05E3EDFA2A25852200FE4283 /* CountryDetailsViewModelSpec.swift */,
 			);
 			path = CovidStatsTests;
 			sourceTree = "<group>";
@@ -217,6 +215,43 @@
 				050993822A24CFAE00FF2747 /* CountryDetailViewModel.swift */,
 			);
 			path = CountryDetailView;
+			sourceTree = "<group>";
+		};
+		050993872A24E4A800FF2747 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0509937B2A24CBFB00FF2747 /* Extensions */,
+				0509937F2A24CF0C00FF2747 /* MainView */,
+				0509937C2A24CC1500FF2747 /* ReusableViews */,
+				050993842A24CFBB00FF2747 /* CountryDetailView */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		050993892A24E4CA00FF2747 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0509936F2A24A93700FF2747 /* Network */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		0509938A2A24E4DE00FF2747 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0509936E2A24A92E00FF2747 /* Model */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		0509938B2A24E4FF00FF2747 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0509933C2A24750500FF2747 /* CovidStatsApp.swift */,
+				050993402A24750700FF2747 /* Assets.xcassets */,
+				050993422A24750700FF2747 /* Preview Content */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0509934E2A24750700FF2747 /* CovidStatsTests.swift in Sources */,
+				05E3EDFB2A25852200FE4283 /* CountryDetailsViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +556,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CovidStats/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CovidStats/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = ZM87MSCS59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -529,6 +565,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +586,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CovidStats/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CovidStats/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = ZM87MSCS59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -558,6 +595,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
