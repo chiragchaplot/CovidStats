@@ -36,9 +36,6 @@ struct CountryDetailView: View {
 
         VStack(alignment: .leading,
                spacing: 15) {
-          if let date = viewModel.getDate() {
-            Text("Date: \(date)")
-          }
           if let active = viewModel.getActive() {
             Text("Active: \(active)")
           }

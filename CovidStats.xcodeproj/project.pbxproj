@@ -11,7 +11,6 @@
 		0509933F2A24750500FF2747 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509933E2A24750500FF2747 /* MainView.swift */; };
 		050993412A24750700FF2747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050993402A24750700FF2747 /* Assets.xcassets */; };
 		050993442A24750700FF2747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050993432A24750700FF2747 /* Preview Assets.xcassets */; };
-		0509934E2A24750700FF2747 /* CovidStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509934D2A24750700FF2747 /* CovidStatsTests.swift */; };
 		050993582A24750700FF2747 /* CovidStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993572A24750700FF2747 /* CovidStatsUITests.swift */; };
 		0509935A2A24750700FF2747 /* CovidStatsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993592A24750700FF2747 /* CovidStatsUITestsLaunchTests.swift */; };
 		050993672A24751F00FF2747 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050993662A24751F00FF2747 /* APIService.swift */; };
@@ -53,7 +52,6 @@
 		050993402A24750700FF2747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		050993432A24750700FF2747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		050993492A24750700FF2747 /* CovidStatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidStatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0509934D2A24750700FF2747 /* CovidStatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatsTests.swift; sourceTree = "<group>"; };
 		050993532A24750700FF2747 /* CovidStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050993572A24750700FF2747 /* CovidStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatsUITests.swift; sourceTree = "<group>"; };
 		050993592A24750700FF2747 /* CovidStatsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 		0509934C2A24750700FF2747 /* CovidStatsTests */ = {
 			isa = PBXGroup;
 			children = (
-				0509934D2A24750700FF2747 /* CovidStatsTests.swift */,
 				05E3EDFA2A25852200FE4283 /* CountryDetailsViewModelSpec.swift */,
 			);
 			path = CovidStatsTests;
@@ -405,7 +402,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0509934E2A24750700FF2747 /* CovidStatsTests.swift in Sources */,
 				05E3EDFB2A25852200FE4283 /* CountryDetailsViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
