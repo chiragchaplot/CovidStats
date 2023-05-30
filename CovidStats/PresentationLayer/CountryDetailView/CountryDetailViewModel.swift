@@ -22,7 +22,7 @@ final class CountryDetailViewModel: ObservableObject {
     guard let updated = countryData.updated  else { return nil }
     let date = Date(timeIntervalSince1970: updated)
     let dateFormatter = DateFormatter()
-    dateFormatter.timeZone = TimeZone(abbreviation: "AET")
+    dateFormatter.timeZone = TimeZone(abbreviation: "AEST")
     dateFormatter.locale = NSLocale.current
     dateFormatter.dateFormat = "dd-MMM-yyyy"
     return dateFormatter.string(from: date)
